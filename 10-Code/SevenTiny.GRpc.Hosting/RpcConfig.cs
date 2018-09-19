@@ -1,12 +1,9 @@
 ﻿using Grpc.Core;
+using SevenTiny.GRpc.Implement;
 using SevenTiny.GRpc.Protocol;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SevenTiny.GRpc.Implement
+namespace SevenTiny.GRpc.Hosting
 {
     public static class RpcConfig
     {
@@ -16,7 +13,11 @@ namespace SevenTiny.GRpc.Implement
         {
             _server = new Server
             {
-                Services = { MsgService.BindService(new MsgServiceImpl()) },
+                Services =
+                {
+                    BusinessService.BindService(new BusinessServiceImpl()),
+                    MsgService.BindService(new MsgServiceImpl())
+                },
                 Ports = { new ServerPort("localhost", 40001, ServerCredentials.Insecure) }
             };
             _server.Start();

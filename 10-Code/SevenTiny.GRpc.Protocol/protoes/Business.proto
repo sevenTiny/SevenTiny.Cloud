@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+
+package SevenTiny.GRpc.Protocol;
+
+import "Model.proto";
+
+service BusinessService{
+  rpc Test(SevenTiny.GRpc.Protocol.Model.RequestArgs) returns (SevenTiny.GRpc.Protocol.Model.OperateResult){}
+}
