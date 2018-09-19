@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GRpc", "GRpc", "{53505E56-CA23-4068-921C-2B196EEC0652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenTiny.GRpc.Client", "..\10-Code\SevenTiny.GRpc.Client\SevenTiny.GRpc.Client.csproj", "{FBB5D4D4-863D-4522-BF35-CF978303BE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenTiny.GRpc.Hosting", "..\10-Code\SevenTiny.GRpc.Hosting\SevenTiny.GRpc.Hosting.csproj", "{B481BA8B-635E-4430-80AA-F92F0524A8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenTiny.GRpc.Protocol", "..\10-Code\SevenTiny.GRpc.Protocol\SevenTiny.GRpc.Protocol.csproj", "{3BC6C92C-D90A-4218-9377-9B690A095CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenTiny.GRpc.Implement", "..\10-Code\SevenTiny.GRpc.Implement\SevenTiny.GRpc.Implement.csproj", "{668D1B8D-8B74-49E0-81C6-5A447FE464BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenTiny.GRpc.Installation", "..\10-Code\SevenTiny.GRpc.Installation\SevenTiny.GRpc.Installation.csproj", "{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB5D4D4-863D-4522-BF35-CF978303BE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB5D4D4-863D-4522-BF35-CF978303BE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB5D4D4-863D-4522-BF35-CF978303BE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB5D4D4-863D-4522-BF35-CF978303BE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B481BA8B-635E-4430-80AA-F92F0524A8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B481BA8B-635E-4430-80AA-F92F0524A8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B481BA8B-635E-4430-80AA-F92F0524A8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B481BA8B-635E-4430-80AA-F92F0524A8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC6C92C-D90A-4218-9377-9B690A095CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC6C92C-D90A-4218-9377-9B690A095CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC6C92C-D90A-4218-9377-9B690A095CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC6C92C-D90A-4218-9377-9B690A095CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668D1B8D-8B74-49E0-81C6-5A447FE464BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668D1B8D-8B74-49E0-81C6-5A447FE464BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668D1B8D-8B74-49E0-81C6-5A447FE464BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668D1B8D-8B74-49E0-81C6-5A447FE464BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBB5D4D4-863D-4522-BF35-CF978303BE1B} = {53505E56-CA23-4068-921C-2B196EEC0652}
+		{B481BA8B-635E-4430-80AA-F92F0524A8DA} = {53505E56-CA23-4068-921C-2B196EEC0652}
+		{3BC6C92C-D90A-4218-9377-9B690A095CDA} = {53505E56-CA23-4068-921C-2B196EEC0652}
+		{668D1B8D-8B74-49E0-81C6-5A447FE464BB} = {53505E56-CA23-4068-921C-2B196EEC0652}
+		{63A5D4D5-CC5F-461C-A4DA-4561FADD34C7} = {53505E56-CA23-4068-921C-2B196EEC0652}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3ED6475-5C37-4285-B6B3-3C31EAF331F4}
+	EndGlobalSection
+EndGlobal
