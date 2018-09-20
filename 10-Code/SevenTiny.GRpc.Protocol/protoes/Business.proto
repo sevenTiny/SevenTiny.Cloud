@@ -6,4 +6,5 @@ import "Model.proto";
 
 service BusinessService{
   rpc Test(SevenTiny.GRpc.Protocol.Model.RequestArgs) returns (SevenTiny.GRpc.Protocol.Model.OperateResult){}
+  rpc GetShopName(SevenTiny.GRpc.Protocol.Model.RequestArgs) returns (SevenTiny.GRpc.Protocol.Model.OperateResult){}
 }

@@ -25,10 +25,12 @@ namespace SevenTiny.GRpc.Protocol {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cg5CdXNpbmVzcy5wcm90bxIXU2V2ZW5UaW55LkdScGMuUHJvdG9jb2waC01v",
-            "ZGVsLnByb3RvMnUKD0J1c2luZXNzU2VydmljZRJiCgRUZXN0EiouU2V2ZW5U",
-            "aW55LkdScGMuUHJvdG9jb2wuTW9kZWwuUmVxdWVzdEFyZ3MaLC5TZXZlblRp",
-            "bnkuR1JwYy5Qcm90b2NvbC5Nb2RlbC5PcGVyYXRlUmVzdWx0IgBiBnByb3Rv",
-            "Mw=="));
+            "ZGVsLnByb3RvMuABCg9CdXNpbmVzc1NlcnZpY2USYgoEVGVzdBIqLlNldmVu",
+            "VGlueS5HUnBjLlByb3RvY29sLk1vZGVsLlJlcXVlc3RBcmdzGiwuU2V2ZW5U",
+            "aW55LkdScGMuUHJvdG9jb2wuTW9kZWwuT3BlcmF0ZVJlc3VsdCIAEmkKC0dl",
+            "dFNob3BOYW1lEiouU2V2ZW5UaW55LkdScGMuUHJvdG9jb2wuTW9kZWwuUmVx",
+            "dWVzdEFyZ3MaLC5TZXZlblRpbnkuR1JwYy5Qcm90b2NvbC5Nb2RlbC5PcGVy",
+            "YXRlUmVzdWx0IgBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::SevenTiny.GRpc.Protocol.Model.ModelReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));

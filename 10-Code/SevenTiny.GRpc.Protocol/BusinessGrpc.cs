@@ -22,6 +22,13 @@ namespace SevenTiny.GRpc.Protocol {
         __Marshaller_SevenTiny_GRpc_Protocol_Model_RequestArgs,
         __Marshaller_SevenTiny_GRpc_Protocol_Model_OperateResult);
 
+    static readonly grpc::Method<global::SevenTiny.GRpc.Protocol.Model.RequestArgs, global::SevenTiny.GRpc.Protocol.Model.OperateResult> __Method_GetShopName = new grpc::Method<global::SevenTiny.GRpc.Protocol.Model.RequestArgs, global::SevenTiny.GRpc.Protocol.Model.OperateResult>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetShopName",
+        __Marshaller_SevenTiny_GRpc_Protocol_Model_RequestArgs,
+        __Marshaller_SevenTiny_GRpc_Protocol_Model_OperateResult);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -32,6 +39,11 @@ namespace SevenTiny.GRpc.Protocol {
     public abstract partial class BusinessServiceBase
     {
       public virtual global::System.Threading.Tasks.Task<global::SevenTiny.GRpc.Protocol.Model.OperateResult> Test(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::SevenTiny.GRpc.Protocol.Model.OperateResult> GetShopName(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -77,6 +89,22 @@ namespace SevenTiny.GRpc.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Test, null, options, request);
       }
+      public virtual global::SevenTiny.GRpc.Protocol.Model.OperateResult GetShopName(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetShopName(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::SevenTiny.GRpc.Protocol.Model.OperateResult GetShopName(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetShopName, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::SevenTiny.GRpc.Protocol.Model.OperateResult> GetShopNameAsync(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetShopNameAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::SevenTiny.GRpc.Protocol.Model.OperateResult> GetShopNameAsync(global::SevenTiny.GRpc.Protocol.Model.RequestArgs request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetShopName, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override BusinessServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -89,7 +117,8 @@ namespace SevenTiny.GRpc.Protocol {
     public static grpc::ServerServiceDefinition BindService(BusinessServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Test, serviceImpl.Test).Build();
+          .AddMethod(__Method_Test, serviceImpl.Test)
+          .AddMethod(__Method_GetShopName, serviceImpl.GetShopName).Build();
     }
 
   }

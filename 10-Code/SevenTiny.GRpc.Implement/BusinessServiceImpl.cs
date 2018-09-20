@@ -17,5 +17,11 @@ namespace SevenTiny.GRpc.Implement
             result.Result = "33333" + request.Arg1;
             return result;
         }
+        public override async Task<OperateResult> GetShopName(RequestArgs request, ServerCallContext context)
+        {
+            OperateResult result = new OperateResult();
+            result.Result = "7tiny result:" + request.Arg1;
+            return result;
+        }
     }
 }
