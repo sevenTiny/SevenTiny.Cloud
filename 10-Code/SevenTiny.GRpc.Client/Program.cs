@@ -8,12 +8,11 @@ namespace SevenTiny.GRpc.Client
 {
     class Program
     {
-        private static Channel _channel;
+        private static Channel _channel = new Channel("127.0.0.1:40001", ChannelCredentials.Insecure);
         private static BusinessService.BusinessServiceClient _client;
 
         static void Main(string[] args)
         {
-            _channel = new Channel("127.0.0.1:40001", ChannelCredentials.Insecure);
             _client = new BusinessService.BusinessServiceClient(_channel);
 
             RequestArgs argg = new RequestArgs();
