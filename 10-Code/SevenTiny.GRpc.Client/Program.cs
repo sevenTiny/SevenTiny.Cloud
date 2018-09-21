@@ -25,9 +25,9 @@ namespace SevenTiny.GRpc.Client
                 _client.Test(argg);
             }
             stop.Stop();
-            Console.WriteLine($"调用耗时 {stop.ElapsedMilliseconds}ms.");
+            Console.WriteLine($"万次调用耗时 {stop.ElapsedMilliseconds}ms.");
             var result2 = _client.GetShopName(argg).Result;
-
+            //万次调用2823ms
 
             Console.WriteLine("任意键退出...");
             Console.ReadKey();
